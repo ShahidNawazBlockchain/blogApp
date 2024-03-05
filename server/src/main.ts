@@ -15,7 +15,7 @@ async function bootstrap() {
   // Enable CORS with options
   app.enableCors(corsOptions);
   app.useGlobalPipes(new ValidationPipe());
-  const port: number = 3006;
+  const port: number = 3002;
   await app.listen(port);
   console.log(`http://localhost:${port}`);
 }
